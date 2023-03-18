@@ -4,6 +4,8 @@
 
 //factorial example
 
+#if 0
+
 #include<stdio.h>
 
 int factorial(int n) {
@@ -128,3 +130,4 @@ int main() {
 
 //ฦ๗ภฮลอ p89
 
+#endif
