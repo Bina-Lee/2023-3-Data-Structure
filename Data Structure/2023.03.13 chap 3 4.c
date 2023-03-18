@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-//Æ÷ÀÎÅÍ p91
+//í¬ì¸í„° p91
 
 #if 0
 #include<stdio.h>
@@ -7,24 +7,24 @@ int main() {
 	int a = 10;
 	int* pa = &a;
 	//short : 2byte
-	//Æ÷ÀÎÅÍ ÀÚÃ¼ÀÇ »çÀÌÁî´Â 4byte
+	//í¬ì¸í„° ìžì²´ì˜ ì‚¬ì´ì¦ˆëŠ” 4byte
 
 	//null pointer p91
-	//¾Æ¹«°Íµµ °¡¸®Å°Áö ¾Ê´Â Æ÷ÀÎÅÍ
+	//ì•„ë¬´ê²ƒë„ ê°€ë¦¬í‚¤ì§€ ì•ŠëŠ” í¬ì¸í„°
 	int* NP1 = null;
 	int* NP2 = 0;
 
 	//p90
-	//Æ÷ÀÎÅÍ ¿¬»êÀÚ
+	//í¬ì¸í„° ì—°ì‚°ìž
 
-	//1. ÁÖ¼Ò ¿¬»êÀÚ
+	//1. ì£¼ì†Œ ì—°ì‚°ìž
 	int a1 = 10;
 	
-	//2. °£Á¢ÂüÁ¶¿¬»êÀÚ '*'
+	//2. ê°„ì ‘ì°¸ì¡°ì—°ì‚°ìž '*'
 	int a2 = 20;
 	int* pa1 = &a2;
 	printf("%d", *pa);
-	//ÁÖÀÇ!!! Æ÷ÀÎÅÍ º¯¼ö¿¡ ´ëÇØ¼­¸¸ Àû¿ë°¡´É
+	//ì£¼ì˜!!! í¬ì¸í„° ë³€ìˆ˜ì— ëŒ€í•´ì„œë§Œ ì ìš©ê°€ëŠ¥
 
 }
 #endif
@@ -52,9 +52,9 @@ int main() {
 #if 0
 #include<stdio.h>
 int main() {
-	//p92 ¹è¿­°ú Æ÷ÀÎÅÍ
-	//¹¹ ´ëÃæ cp2¿¡¼­ Çß´ø ³»¿ë
-	//¹è¿­ ÀÌ¸§Àº ÁÖ¼Ò ±×ÀÚÃ¼ ¾îÂ¼±¸
+	//p92 ë°°ì—´ê³¼ í¬ì¸í„°
+	//ë­ ëŒ€ì¶© cp2ì—ì„œ í–ˆë˜ ë‚´ìš©
+	//ë°°ì—´ ì´ë¦„ì€ ì£¼ì†Œ ê·¸ìžì²´ ì–´ì©Œêµ¬
 	int a[10];
 	//a+1==&a[1]
 
@@ -66,38 +66,38 @@ int main() {
 #include<stdio.h>
 #include<stdlib.h>
 int main() {
-	//p94 µ¿Àû ¸Þ¸ð¸®
+	//p94 ë™ì  ë©”ëª¨ë¦¬
 	//malloc : memory allocation
 	//free
 
-	//Á¤Àûmem : ÄÄÆÄÀÏ ÇÒ ¶§ »ç¿ëÇÏ´Â ¸Þ¸ð¸®¾ç ¸ðµÎ °áÁ¤
-	//µ¿Àûmem : ¼öÇàÇÏ¸é¼­ ¸Þ¸ð¸® ÇÒ´ç, ¼Óµµ°¡ ´À¸²,
-	//	¿î¿µÃ¼Á¦°¡ ´ë»§, ¿øÇÏ´Â¸¸Å­ Á¤È®ÇÏ°Ô
-	//	free ¾ÈÇÏ¸é ¸Þ¸ð¸® ³¶ºñ
+	//ì •ì mem : ì»´íŒŒì¼ í•  ë•Œ ì‚¬ìš©í•˜ëŠ” ë©”ëª¨ë¦¬ì–‘ ëª¨ë‘ ê²°ì •
+	//ë™ì mem : ìˆ˜í–‰í•˜ë©´ì„œ ë©”ëª¨ë¦¬ í• ë‹¹, ì†ë„ê°€ ëŠë¦¼,
+	//	ìš´ì˜ì²´ì œê°€ ëŒ€ë¹µ, ì›í•˜ëŠ”ë§Œí¼ ì •í™•í•˜ê²Œ
+	//	free ì•ˆí•˜ë©´ ë©”ëª¨ë¦¬ ë‚­ë¹„
 
 	char* p = (char*)malloc(100);
 	if (p == 0) {
-		printf("¸Þ¸ð¸®¾øÀ½");
+		printf("ë©”ëª¨ë¦¬ì—†ìŒ");
 		return -100;
 	}
 	//free(p);
 	// 
-	//ÇÒ´ç ¹ÞÀº ÁÖ¼Ò¿¡ ¶Ç ÇÒ´çÀ» ¹ÞÀ¸¸é
-	//¿ø·¡ ÇÒ´ç ¹Þ¾ÆÁ® ÀÖ´ø °÷Àº ¿¢¼¼½º ºÒ°¡
+	//í• ë‹¹ ë°›ì€ ì£¼ì†Œì— ë˜ í• ë‹¹ì„ ë°›ìœ¼ë©´
+	//ì›ëž˜ í• ë‹¹ ë°›ì•„ì ¸ ìžˆë˜ ê³³ì€ ì—‘ì„¸ìŠ¤ ë¶ˆê°€
 	//unreferenced space problem
 
 	//dangling pointer problem
 	char* q = p;
 	free(q);
 	*p = 20;
-	//writingÇÏ¸é ¾ÈµÇ´Â ¸Þ¸ð¸®¿¡ writingÇØ¹ö¸²
+	//writingí•˜ë©´ ì•ˆë˜ëŠ” ë©”ëª¨ë¦¬ì— writingí•´ë²„ë¦¼
 
 
 }
 #endif
 
 #if 0
-//±¸Á¶Ã¼ Æ÷ÀÎÅÍ
+//êµ¬ì¡°ì²´ í¬ì¸í„°
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -125,13 +125,13 @@ int main() {
 
 //LIFO : Last In First Out
 
-//call stack ÇÔ¼ö°¡ ºÒ¸° ¼ø¼­
+//call stack í•¨ìˆ˜ê°€ ë¶ˆë¦° ìˆœì„œ
 
-//±¸Çö?
-//ÀÔ·ÂµÇ´Â Á¤¼ö¸¦ ÀúÀåÇÏ´Â stackÀ» ±¸Çö
+//êµ¬í˜„?
+//ìž…ë ¥ë˜ëŠ” ì •ìˆ˜ë¥¼ ì €ìž¥í•˜ëŠ” stackì„ êµ¬í˜„
 
-//ÀÔ·Â : push <== stack¿¡ °ªÀ» ÀúÀåÇÏ´Â operation
-//Ãâ·Â : pop  <== stack¿¡¼­ °ªÀ» ²¨³»´Â operation
+//ìž…ë ¥ : push <== stackì— ê°’ì„ ì €ìž¥í•˜ëŠ” operation
+//ì¶œë ¥ : pop  <== stackì—ì„œ ê°’ì„ êº¼ë‚´ëŠ” operation
 
 #if 0
 #include<stdio.h>

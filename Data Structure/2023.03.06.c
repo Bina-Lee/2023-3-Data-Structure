@@ -1,57 +1,56 @@
 /*
-µ¥ÀÌÅÍ ±¸Á¶ 1ÁÖÂ÷ 1Â÷½Ã
+ë°ì´í„° êµ¬ì¡° 1ì£¼ì°¨ 1ì°¨ì‹œ
 
-01. ÀÚ·á±¸Á¶¿Í ¾Ë°í¸®Áò p12
+01. ìžë£Œêµ¬ì¡°ì™€ ì•Œê³ ë¦¬ì¦˜ p12
 
-ÀÚ·á±¸Á¶¶õ ?
+ìžë£Œêµ¬ì¡°ëž€ ?
 
-¾Ë°í¸®ÁòÀÌ¶õ ? p15
+ì•Œê³ ë¦¬ì¦˜ì´ëž€ ? p15
 
-1.2 Ãß»óÀÚ·áÇü abstract data type p17
+1.2 ì¶”ìƒìžë£Œí˜• abstract data type p17
 = > class
-¾î¶² °ªÀÌ µé¾î°¡´ÂÁö ¾î¶² ¿ÀÆÛ·¹ÀÌÆÃ±îÁö ÇÒ¼öÀÖ´ÂÁö¸¦ ´ãÀº ÀÚ·áÇü
-(±âº» ÀÚ·áÇüÀº int char µîµî
+ì–´ë–¤ ê°’ì´ ë“¤ì–´ê°€ëŠ”ì§€ ì–´ë–¤ ì˜¤í¼ë ˆì´íŒ…ê¹Œì§€ í• ìˆ˜ìžˆëŠ”ì§€ë¥¼ ë‹´ì€ ìžë£Œí˜•
+(ê¸°ë³¸ ìžë£Œí˜•ì€ int char ë“±ë“±
 
-	1.3 ¾Ë°í¸®ÁòÀÇ ¼º´É ºÐ¼® p21~35
+	1.3 ì•Œê³ ë¦¬ì¦˜ì˜ ì„±ëŠ¥ ë¶„ì„ p21~35
 
-	time complexity ½Ã°£ º¹Àâµµ
-	µ¥ÀÌÅÍÀÇ ¾çÀÌ ¹«ÇÑ´ë·Î ´Ã¾î³¯¶§ Ã³¸®½Ã°£
-	O(n) < -ºò¿À Ç¥±â¹ý p27
+	time complexity ì‹œê°„ ë³µìž¡ë„
+	ë°ì´í„°ì˜ ì–‘ì´ ë¬´í•œëŒ€ë¡œ ëŠ˜ì–´ë‚ ë•Œ ì²˜ë¦¬ì‹œê°„
+	O(n) < -ë¹…ì˜¤ í‘œê¸°ë²• p27
 
 	O(n)
-	O(1)->»ó¼ö, Ç×»ó ½Ã°£ÀÌ ÀÏÁ¤
+	O(1)->ìƒìˆ˜, í•­ìƒ ì‹œê°„ì´ ì¼ì •
 	O(n ^ 2)
 	O(n ^ 3)
 	O(2 ^ n) ...etc
 
-	´ë¼Òºñ±³ : O(n)
-	¼ÒÆÃ : O(n log n)
-	¸Ç ¾Õ ¼±ÅÃ : O(1)
+	ëŒ€ì†Œë¹„êµ : O(n)
+	ì†ŒíŒ… : O(n log n)
+	ë§¨ ì•ž ì„ íƒ : O(1)
 
-	big O notation¿¡¼­´Â »ó¼öultipleÀ» ¹«½Ã
-	- n, 2n, n / 2µî »ç¿ë ¾ÈÇÔ
-	- n->¹«ÇÑ´ë¸¦ °¡Á¤ÇÏ±â ‹š¹®¿¡ »ó¼ö´Â ÀÇ¹Ì°¡ ¾øÀ½
-	n¼ö½ÄÀÌ º¹ÀâÇØµµ Á¦ÀÏ Áõ°¡ÆøÀÌ Å« Ä£±¸·Î¸¸ ºò¿À Ç¥Çö
+	big O notationì—ì„œëŠ” ìƒìˆ˜ultipleì„ ë¬´ì‹œ
+	- n, 2n, n / 2ë“± ì‚¬ìš© ì•ˆí•¨
+	- n->ë¬´í•œëŒ€ë¥¼ ê°€ì •í•˜ê¸° Â‹Âšë¬¸ì— ìƒìˆ˜ëŠ” ì˜ë¯¸ê°€ ì—†ìŒ
+	nìˆ˜ì‹ì´ ë³µìž¡í•´ë„ ì œì¼ ì¦ê°€í­ì´ í° ì¹œêµ¬ë¡œë§Œ ë¹…ì˜¤ í‘œí˜„
 
 	p30 time complexity
 	O(1) > O(logn) > O(n) > O(n log n) > O(n ^ 2) > O(n ^ 3) > O(2 ^ n) ? O(n!)...
-	(¼º´É)
+	(ì„±ëŠ¥)
 
-	ÀÏ¹ÝÀûÀÎ ¾Ë°í¸®Áò : O(n ^ 3)
+	ì¼ë°˜ì ì¸ ì•Œê³ ë¦¬ì¦˜ : O(n ^ 3)
 
 	Space complexity
 
 	================================================== =
 
-	02. ¼øÈ¯ Recursion p40
+	02. ìˆœí™˜ Recursion p40
 
-	¼øÈ¯ÀÇ ¿¹ : factorial °è»ê
-	ÀÚ±âÈ£Ãâ ÇÔ¼ö
+	ìˆœí™˜ì˜ ì˜ˆ : factorial ê³„ì‚°
+	ìžê¸°í˜¸ì¶œ í•¨ìˆ˜
 
-	recursionÀÇ ¹®Á¦Á¡
-	ÀÚ¿ø¼Ò¸ð°¡ ½ÉÇÔ
-	¼ýÀÚ°¡ Ä¿Áú¼ö·Ï ¸Þ¸ð¸®¸¦ ¹«ÇÑ´ë·Î ¸ÔÀ½
+	recursionì˜ ë¬¸ì œì 
+	ìžì›ì†Œëª¨ê°€ ì‹¬í•¨
+	ìˆ«ìžê°€ ì»¤ì§ˆìˆ˜ë¡ ë©”ëª¨ë¦¬ë¥¼ ë¬´í•œëŒ€ë¡œ ë¨¹ìŒ
 
 	~p46
-
 */

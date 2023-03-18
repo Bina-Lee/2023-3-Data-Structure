@@ -1,4 +1,4 @@
-//Á¤¼ö ÀúÀå stack
+//ì •ìˆ˜ ì €ì¥ stack
 
 #if 0
 
@@ -7,11 +7,11 @@
 #define STACK_SZ 10
 
 int stack[STACK_SZ];
-int top = -1; //ÇöÀç ½ºÅÃÀÇ ¸Ç ²À´ë±â À§Ä¡ index
+int top = -1; //í˜„ì¬ ìŠ¤íƒì˜ ë§¨ ê¼­ëŒ€ê¸° ìœ„ì¹˜ index
 
 int isFull(void) {
-	//fullÀÌ¸é 1 ¹İÈ¯
-	//¾Æ´Ï¸é 0
+	//fullì´ë©´ 1 ë°˜í™˜
+	//ì•„ë‹ˆë©´ 0
 	return (top == (STACK_SZ - 1));
 }
 
@@ -36,7 +36,7 @@ int pop(void) {
 
 	if (isEmpty()) {
 		printf("Error, Stack empty\n");
-		return -999; //¿¡·¯¶ó°í °¡Á¤
+		return -999; //ì—ëŸ¬ë¼ê³  ê°€ì •
 	}
 
 	int result = stack[top];
@@ -51,7 +51,7 @@ int main() {
 	push(7);
 
 	pop();
-	printf("%d", pop()); //6 ¹İÈ¯
+	printf("%d", pop()); //6 ë°˜í™˜
 }
 
 #endif
@@ -62,9 +62,9 @@ int main() {
 
 #if 0
 
-//¹Ì·ÎÃ£±â
+//ë¯¸ë¡œì°¾ê¸°
 
-//2Â÷¿ø ¹è¿­¿¡¼­ 1Àº º®, 0Àº °ø°£
+//2ì°¨ì› ë°°ì—´ì—ì„œ 1ì€ ë²½, 0ì€ ê³µê°„
 #include<stdio.h>
 
 #define MAZE_SIZE 6
@@ -88,7 +88,7 @@ char maze[MAZE_SIZE][MAZE_SIZE] = {
 	{'1','1','1','1','1','1'}
 };
 
-//¹Ì·Î Ãâ·Â
+//ë¯¸ë¡œ ì¶œë ¥
 void printMaze(void) {
 	for (int i = 0; i < MAZE_SIZE; i++) {
 		for (int j=0; j < MAZE_SIZE; j++) {
@@ -122,7 +122,7 @@ void push(int _r, int _c) {
 LOC pop(void) {
 	if (isEmpty()) {
 		LOC err_loc = { -1,-1 };
-		return err_loc;	//½ºÅÃ ºö
+		return err_loc;	//ìŠ¤íƒ ë¹”
 	}
 
 	LOC result = stack[top];
@@ -135,17 +135,17 @@ int main() {
 	LOC cur = { 1,0 };
 
 	while (1) {
-		//x¿¡ µµÂøÇÏ¸é ³¡
+		//xì— ë„ì°©í•˜ë©´ ë
 		if (maze[cur.r][cur.c] == 'x') {
-			printf("±æ Ã£À½, ³¡\n");
+			printf("ê¸¸ ì°¾ìŒ, ë\n");
 			return 0;
 		}
 
-		maze[cur.r][cur.c] = '.';//¿Ô´ø °÷ Ç¥½Ã
+		maze[cur.r][cur.c] = '.';//ì™”ë˜ ê³³ í‘œì‹œ
 
 		printMaze();
 
-		//°¥¼öÀÖ´Â À§Ä¡ ÀüºÎ ½ºÅÃ¿¡ Áı¾î³ÖÀ½
+		//ê°ˆìˆ˜ìˆëŠ” ìœ„ì¹˜ ì „ë¶€ ìŠ¤íƒì— ì§‘ì–´ë„£ìŒ
 		push(cur.r - 1, cur.c);
 		push(cur.r + 1, cur.c);
 		push(cur.r, cur.c - 1);
@@ -154,7 +154,7 @@ int main() {
 		cur = pop();
 
 		if ((cur.r == -1) || (cur.c == -1)) {
-			printf("±æ ¾øÀ½");
+			printf("ê¸¸ ì—†ìŒ");
 			return -1;
 		}
 	}
@@ -167,11 +167,11 @@ int main() {
 #if 1
 //p128
 
-//ÁßÀ§Ç¥±â½ÄÀ» ÈÄÀ§Ç¥±â¼ö½ÄÀ¸·Î º¯È¯
+//ì¤‘ìœ„í‘œê¸°ì‹ì„ í›„ìœ„í‘œê¸°ìˆ˜ì‹ìœ¼ë¡œ ë³€í™˜
 
-//1+2 : infix expression : ¿¬»êÀÚ°¡ °¡¿îµ¥ ÀÖÀ½
-//ÈÄÀ§Ç¥±â½Ä : postfix expression : 1 2 +
-//¿¬»êÀÚ°¡ ³ª¿À¸é °¡Àå °¡±îÀÌ ÀÖ´Â µÎ°³ ¼ıÀÚ ¿¬»ê
+//1+2 : infix expression : ì—°ì‚°ìê°€ ê°€ìš´ë° ìˆìŒ
+//í›„ìœ„í‘œê¸°ì‹ : postfix expression : 1 2 +
+//ì—°ì‚°ìê°€ ë‚˜ì˜¤ë©´ ê°€ì¥ ê°€ê¹Œì´ ìˆëŠ” ë‘ê°œ ìˆ«ì ì—°ì‚°
 
 
 

@@ -1,6 +1,6 @@
-//µ¥ÀÌÅÍ ±¸Á¶ 1ÁÖÂ÷ 2Â÷½Ã
+//ë°ì´í„° êµ¬ì¡° 1ì£¼ì°¨ 2ì°¨ì‹œ
 
-//Recursion ¼øÈ¯ p46?
+//Recursion ìˆœí™˜ p46?
 
 //factorial example
 
@@ -18,7 +18,7 @@ int main() {
 	printf("%d", result);
 }
 
-//¹İº¹¹® example
+//ë°˜ë³µë¬¸ example
 
 #include<stdio.h>
 int main() {
@@ -30,9 +30,9 @@ int main() {
 	printf("%d", result);
 }
 
-//recursionÀº ¼Óµµ°¡ ´À¸², °ø°£À» ÇÒ´ç¹Ş´Â ½Ã°£
+//recursionì€ ì†ë„ê°€ ëŠë¦¼, ê³µê°„ì„ í• ë‹¹ë°›ëŠ” ì‹œê°„
 
-//°ÅµìÁ¦°ö°ªÀÇ °è»ê p50
+//ê±°ë“­ì œê³±ê°’ì˜ ê³„ì‚° p50
 
 #include<stdio.h>
 
@@ -61,14 +61,14 @@ int main() {
 
 //==> > O(log_2 n)
 
-//ÇÇº¸³ªÄ¡ ¼ö¿­ÀÇ °è»ê p53
+//í”¼ë³´ë‚˜ì¹˜ ìˆ˜ì—´ì˜ ê³„ì‚° p53
 
 #include<stdio.h>
 
 int pibo(int n) {
 	if (n == 0) return 0;
 	if (n == 1) return 1;
-	int pp = 0; //previous-previous Àü¿¡Àü²¨
+	int pp = 0; //previous-previous ì „ì—ì „êº¼
 	int p = 01;
 	int result = 0;
 	for (int i = 2; i <= n; i++) {
@@ -84,9 +84,9 @@ int pibo_r(int n) {
 	return fibo_r(n - 2) + fibo_r(n - 1);
 }
 
-//==> > recursion¿¡¼­ ¹İº¹µÇ´Â°É °ªÀ» ÀúÀåÇÏ¸é ÀÚ¿ø ¹× ½Ã°£ ´ÜÃà °¡´É
+//==> > recursionì—ì„œ ë°˜ë³µë˜ëŠ”ê±¸ ê°’ì„ ì €ì¥í•˜ë©´ ìì› ë° ì‹œê°„ ë‹¨ì¶• ê°€ëŠ¥
 
-//n - 1°³Â¥¸® ¹è¿­ ´ä¾Æ¼­ ÄÚµå ÀÛ¼º
+//n - 1ê°œì§œë¦¬ ë°°ì—´ ë‹µì•„ì„œ ì½”ë“œ ì‘ì„±
 #include<stdio.h>
 #include<stdlib.h>
 int pibo_r_s(int n) {
@@ -99,16 +99,16 @@ int main() {
 
 }
 
-//ÇÏ³ëÀÌÅ¸¿ö p56
+//í•˜ë…¸ì´íƒ€ì›Œ p56
 
 void hanoi(int n, int from, int temp, int to) {
 	if (n == 1) {
-		printf("%d¹øµ¹À» #d¿¡¼­ #d·Î\n", 1, from, to);
+		printf("%dë²ˆëŒì„ #dì—ì„œ #dë¡œ\n", 1, from, to);
 		return;
 	}
 
 	hanoi(n - 1, from,to,temp);
-	printf("%d¹øµ¹À» #d¿¡¼­ #d·Î\n", n,from,to);
+	printf("%dë²ˆëŒì„ #dì—ì„œ #dë¡œ\n", n,from,to);
 	hanoi(n - 1, temp,from,to);
 	return;
 }
@@ -116,7 +116,7 @@ int main() {
 	hanoi(3, 1, 2, 3);
 }
 
-//03. ¹è¿­ ±¸Á¶Ã¼ Æ÷ÀÎÅÍ p70
+//03. ë°°ì—´ êµ¬ì¡°ì²´ í¬ì¸í„° p70
 
 typedef struct {
 	int a;
@@ -128,6 +128,6 @@ int main() {
 
 //76~88 skip
 
-//Æ÷ÀÎÅÍ p89
+//í¬ì¸í„° p89
 
 #endif
