@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 //포인터 p91
 
-#if 0
+#if 1
 #include<stdio.h>
 int main() {
 	int a = 10;
@@ -30,7 +30,7 @@ int main() {
 #endif
 
 
-#if 0
+#if 1
 #include<stdio.h>
 void temp(int* a, int* b) {
 	int t = *a;
@@ -49,7 +49,7 @@ int main() {
 }
 #endif
 
-#if 0
+#if 1
 #include<stdio.h>
 int main() {
 	//p92 배열과 포인터
@@ -62,7 +62,7 @@ int main() {
 }
 #endif
 
-#if 0
+#if 1
 #include<stdio.h>
 #include<stdlib.h>
 int main() {
@@ -96,7 +96,7 @@ int main() {
 }
 #endif
 
-#if 0
+#if 1
 //구조체 포인터
 #include<stdio.h>
 #include<stdlib.h>
@@ -133,7 +133,7 @@ int main() {
 //입력 : push <== stack에 값을 저장하는 operation
 //출력 : pop  <== stack에서 값을 꺼내는 operation
 
-#if 0
+#if 1
 #include<stdio.h>
 
 void push(int n) {
