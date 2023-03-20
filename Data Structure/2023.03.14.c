@@ -1,6 +1,6 @@
 //정수 저장 stack
 
-#if 0
+#if 1
 
 #include<stdio.h>
 
