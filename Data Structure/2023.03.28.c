@@ -1,4 +1,4 @@
-#if 0
+#if 1
 
 #include<stdio.h>
 #include<stdlib.h>//malloc
@@ -136,3 +136,5 @@ int main(){
 }
 
 #endif
+
+
