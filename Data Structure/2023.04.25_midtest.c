@@ -84,7 +84,7 @@ int main(){
 }
 #endif
 
-#if 01
+#if 0
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -238,7 +238,7 @@ int main(){
 }
 #endif
 
-#if 0
+#if 01
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct node{

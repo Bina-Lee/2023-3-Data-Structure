@@ -1,4 +1,4 @@
-#if 1
+#if 0
 #include<stdio.h>
 int heap[101];
 int idx=0;
@@ -44,7 +44,7 @@ int main(){
 }
 #endif
 
-#if 1
+#if 0
 #include<stdio.h>
 int heap[11];
 int idx=0;

@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
 #define HEAP_SZ 100
 
 int heap[HEAP_SZ+1];
